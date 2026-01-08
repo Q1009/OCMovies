@@ -43,8 +43,7 @@ const displayMovieDetail = async (id) => {
     showImage(movieDesktopImage, movieDetails.image_url, movieDetails.title)
 
     const movieMobileImage = document.querySelector('.movie-mobile-image')
-    movieMobileImage.src = movieDetails.image_url
-    movieMobileImage.alt = movieDetails.title
+    showImage(movieMobileImage, movieDetails.image_url, movieDetails.title)
 
     modal.classList.toggle('show')
 }

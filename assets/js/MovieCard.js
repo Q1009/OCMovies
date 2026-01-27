@@ -12,12 +12,9 @@ class MovieCard {
         const movieCard = document.createElement('div')
         movieCard.classList.add('movie-card')
 
-        
-
         const movieCardImage = document.createElement('img')
         showImage(movieCardImage, this.image, `Affiche du film ${this.title}`)
         movieCardImage.id = 'movie1-image'
-
 
         const movieCardDetails = document.createElement('div')
         movieCardDetails.classList.add('movie-card-details')
